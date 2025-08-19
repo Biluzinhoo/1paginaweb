@@ -171,28 +171,37 @@
 
     <div>
         <h2>Formulários</h2>
-        <label for="nomeusuario">Nome:</label>
-        <input id="nomeusuario" type="text" list="Nome">
-        <br>
-        <label for="cor">Cor:</label>
-        <input id="cor" type="color">
-        <br>
-        <label for="datanascimento">Data Nascimento:</label>
-        <input id="datanascimento" type="text">
-        <br>
-        <label for="email">Email:</label>
-        <input id="email" type="text">
-        <br>
-        <label for="endereco">Endereço:</label>
-        <input id="endereco" type="text">
-        <br>
-        <label for="observacao">Observação:</label>
-        <input id="observacao" type="text">
-        <input id="observacao" type="text">
-        <input id="observacao" type="text">
-        <br>
-        <button>Enviar</button>
+        <form action="">
+            <label for="nomeusuario">Nome:</label>
+            <input id="nomeusuario" type="text" placeholder="Ex: João da Costa">
+            <br>
+            <label for="cor">Cor:</label>
+            <input id="cor" type="color">
+            <br>
+            <label for="datanascimento">Data Nascimento:</label>
+            <input id="datanascimento" type="date">
+            <br>
+            <label for="email">Email:</label>
+            <input id="email" type="text" placeholder="Ex: saffaf@gmail.com">
+            <br>
+            <label for="endereco">Endereço:</label>
+            <input id="endereco" type="text" placeholder="Ex: Rua Seila oq pipipi">
+            <br>
+            <label for="observacao">Observação:</label>
+            <input id="observacao" type="text">
+            <input id="observacao" type="text">
+            <input id="observacao" type="text">
 
+            <input type="button" value="Enviar">
+        </form>
+
+        <form action="https://www.google.com/search" method="post">
+            <h2>Busca</h2>
+            <label for="key">Entre com o termo</label>
+            <input type="text" id="key" name="q">
+            <input type="text" name="bla">
+            <input type="submit" value="Enviar">
+        </form>
     </div>
     <a href="index.html">Ir para indíce
     </a>
