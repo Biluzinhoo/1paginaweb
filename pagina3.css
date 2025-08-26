@@ -1,4 +1,22 @@
-/** seletor{ propriedade:valor;} **/
+/** seletor{ 
+propriedade:valor;} 
+
+Tipos de seletor existentes:
+-Seletor Universal: Seleciona todos os elementos (ex: *)
+-Seletor de Tipo: Seleciona todos os elemntos de um determinado tipo (ex: p, h1, div)
+-Seletor de ID: Seleciona todos os elementos com um determinado ID (ex: #meu-ID)
+-Seletor de Classe: Seleciona todos os elementos com uma determinada classe(ex: .minha-classe)  
+-Seletor de Atributo: Seleciona elementos com um determinado atributo (ex: [type=""
+-Seletor de 
+**/
+
+*{
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+    /**border: 1px solid red;**/
+}
+
 
 p {
     background-color: azure;
@@ -10,4 +28,15 @@ p {
 
 .vermelho{
     color: red;
+}
+
+[for = "nome"], [type = "submit"]{
+color: magenta;
+}
+
+#botao2,[type="submit"]:hover{
+    background-color: magenta;
+    color: yellow;
+    font-size: 40pt;
+
 }
