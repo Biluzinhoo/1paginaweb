@@ -41,7 +41,19 @@
             top: 50%;
         }
 
-        #item4{
+        #item4 {
+            position: fixed;
+            top:100%;
+         
+            animation: subir 1s    none 0s infinite;
+        }
+
+        @keyframes subir {
+            0%{}
+            100%{
+                top:0px;
+                transform: rotate(180deg);
+            }
 
         }
     </style>

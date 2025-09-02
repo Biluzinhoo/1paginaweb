@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Animada</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    
+      
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      animation: mover 8s linear infinite;
+      border-radius: 10px;
+    }
+
+    @keyframes mover {
+      0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+      }
+      25% {
+        top: 0;
+        left: calc(100vw - 100px);
+        background-color: orange;
+      }
+      50% {
+        top: calc(100vh - 100px);
+        left: calc(100vw - 100px);
+        background-color: yellow;
+      }
+      75% {
+        top: calc(100vh - 100px);
+        left: 0;
+        background-color: green;
+      }
+      100% {
+        top: 0;
+        left: 0;
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
