@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: grid;
+            height: 100vh;
+            /**grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 150px; **/
+            grid-template-areas: 
+            "header header header header"
+            "main main . sidebar"
+            "footer footer footer footer";
+            grid-template-rows: 1fr 2fr 1fr;
+        }
+
+        #caxinhas1{
+            background-color: yellow;
+            grid-area: header;
+        }
+
+        #caxinhas2{
+            background-color: orange;
+            grid-area: main;
+        }
+
+        #caxinhas3{
+            background-color: lightgreen;
+            grid-area: sidebar;
+        }
+
+        #caxinhas4{
+            background-color: lightblue;
+            grid-area: footer;
+        }
+
+        #caxinhas5{
+            background-color: violet;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="caxinhas1">1</div>
+    <div class="box" id="caxinhas2">2</div>
+    <div class="box" id="caxinhas3">3</div>
+    <div class="box" id="caxinhas4">4</div>
+    <div class="box" id="caxinhas5">5</div>
+
+</body>
+</html>
