@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvar e Recuperar Nome</title>
+</head>
+<body>
+    <label for="input">Informe seu nome:</label>
+    <input type="text" id="input">
+    <button id="salvar">Salvar</button>
+    <button id="recuperar">Recuperar</button>
+    <p id="nome"></p>
+
+    <script>
+        const input = document.getElementById("input");
+        const salvar = document.getElementById("salvar");
+        const recuperar = document.getElementById("recuperar");
+        const nome = document.getElementById("nome");
+
+        salvar.addEventListener("click", () => {
+            localStorage.setItem("nome", input.value);
+        });
+
+        recuperar.addEventListener("click", () => {
+            const nomeSalvo = localStorage.getItem("nome");
+
+            if (nomeSalvo) {
+                nome.innerHTML = `Nome recuperado: ${nomeSalvo}`;
+            } else {
+                nome.innerHTML = "Nenhum nome encontrado.";
+            }
+        });
+    </script>
+</body>
+</html>
